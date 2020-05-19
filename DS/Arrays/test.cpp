@@ -31,7 +31,7 @@ int gcd_calc(int a, int b){
    	return gcd_calc(b, a % b);
 }
 int juggle(int *a, int diff){
-	gcd=gcd%10;
+	diff=diff%10;
 	int gcd, temp, sec;
 	gcd=gcd_calc(10, diff);
 	//cout<<gcd;
@@ -71,3 +71,4 @@ int main()
 	if (type==2)
 		juggle(a, diff);
 }
+
